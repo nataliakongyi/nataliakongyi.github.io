@@ -2,4 +2,4 @@
 
 Hello! 
 I'm an interdisciplinary designer exploring the intersection of architecture, interactive design and creative computing. 
-Here you'll find my work:)
+Here you'll find my work :)
