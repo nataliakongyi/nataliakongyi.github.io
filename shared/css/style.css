@@ -1,0 +1,940 @@
+/* ==========================================================
+   STYLE.CSS — Main layout and responsive styles
+   Version: v1.0 (October 2025)
+   ----------------------------------------------------------
+   Purpose:
+   - Controls layout, navigation, grid and typography scale
+   - Uses variables defined in variables.css
+   ========================================================== */
+
+/* ===================================
+   GLOBAL STYLES
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  scrollbar-gutter: stable;
+  flex-direction: column;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text-dark);
+    background-color: var(--color-bg)fff;
+    line-height: 1.6;
+}
+
+/* Layout container (max width var(--max-width)) */
+main {
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 120px 0;
+    flex: 1;
+}
+
+
+
+/* =======================
+   Custom Scrollbar Style
+   ======================= */
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px; /* ancho de la barra vertical */
+}
+
+::-webkit-scrollbar-track {
+  background: #d5d5d5; /* color de fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scroll); /* color del thumb (acento púrpura) */
+  border-radius: 8px;
+  border: 0px solid #f5f5f5; /* separa el thumb del borde */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-scroll-hover); /* color alternativo al hover */
+}
+
+/* For Firefox 
+* {
+  scrollbar-width: 8px;
+  scrollbar-color: var(--color-scroll) #f5f5f5;
+}*/
+
+/* ===================================
+   NAVIGATION BAR
+   =================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255,255,255,.9);
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: var(--max-width);
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* Brand (icon + name aligned horizontally) */
+.logo {
+    display: flex;               /* alinea ícono + nombre en fila */
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;                   /* espacio entre ícono y nombre */
+}
+
+.nav-icon {
+    height: 48px;
+    vertical-align: middle;
+    /*display: block;              /* evita espacio extra alrededor del img */
+}
+
+.nav-name {
+    font-weight: 500;            /* ligeramente más pesado, no bold */
+    color: var(--color-text-dark);                 /* negro */
+    text-decoration: none;
+    font-size: var(--font-size-h3);          /* un poco más grande que los links */
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    margin-left: 12px;
+    margin-right: 24px;
+    font-size: var(--font-size-base);
+    transition: color 0.2s ease;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links ul li a {
+  display: block;
+  padding: 2px 2px;
+  text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+  color: var(--color-accent);
+}
+
+.nav-links a:hover:not(.active) {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+/* Language switch */
+.language-switch {
+    margin-left: 12px;
+}
+
+.language-switch a,
+.language-switch .current-lang {
+    color: var(--color-text-gray);        
+    text-decoration: none;
+    font-size:var(--font-size-small);
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+    margin-right: 12px;
+}
+
+.language-switch .current-lang {
+    font-size:var(--font-size-base); /* un poco más grande */
+    font-weight: 500;   /* ligeramente más grueso */
+    color: var(--color-text-dark); 
+}
+
+
+/* Responsive: ocultar nombre en mobile */
+@media (max-width: 768px) {
+    .nav-name {
+        display: none;
+    }
+
+    .language-switch a,
+.language-switch .current-lang {
+    color: var(--color-text-gray);        
+    text-decoration: none;
+    font-size:var(--font-size-xs);
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+    margin-right: 6px;
+}
+
+.language-switch .current-lang {
+    font-size:var(--font-size-small); /* un poco más grande */
+    font-weight: 500;   /* ligeramente más grueso */
+    color: var(--color-text-dark); 
+}
+}
+
+/* ---------- GENERAL FOOTER STYLING ---------- */
+.footer {
+  margin-top: auto; /* pushes footer to bottom if content is short */
+  text-align: center;
+  padding: var(--space-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text-gray);
+  font-size: var(--font-size-small);
+  border-top: 1px solid #ddd;
+  line-height: 1.2;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px; /* reducido ~25% */
+}
+
+/* ---------- COPYRIGHT LINE ---------- */
+.footer p {
+  margin: 0.2rem 0;
+  color: var(--color-text-gray);
+}
+
+/* ---------- SOCIAL LINKS ---------- */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.social-media a{
+  color: var(--color-text-gray);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;  /* cuadrados con esquinas redondeadas */
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+}
+/* -----------Highlighted note--------------- */
+
+.tagline {
+  padding-bottom: 30px;
+
+}
+
+.tagline p {
+  font-size: var(--font-size-h4);
+  color: var(--color-text-gray);
+  opacity: 60%;
+  max-width: 560px;
+  font-style: italic;
+}
+
+
+/* -------- LANDING INTRO ---------- */
+
+.intro {
+ margin-top: var(--space-xl);
+ margin-bottom: var(--space-md);
+}
+
+.intro h1{
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-md);
+}
+
+
+
+.intro-projects {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.intro-projects a {
+  color: var(--color-secondary-accent);
+}
+/* ------ ABOUT -------- */
+.bio h1 {
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.bio p{
+  margin-bottom: var(--space-sm);
+}
+.about-contact {
+  margin-top: var(--space-md);
+}
+
+.about-contact a {
+  color:var(--color-secondary-accent);
+}
+
+@media (max-width: 768px) {
+
+.intro-projects {
+margin-top: 5px;
+margin-bottom:05px;
+}
+
+.intro {
+margin-top: 0;
+margin-bottom: 0;
+}
+}
+
+/* -------- WORK ---------- */
+
+
+
+.work h1{
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.work p {
+
+  margin-bottom: var(--space-md);
+}
+/* ===================================
+   CONTACT PAGE
+   =================================== */
+
+
+.contact-section {
+  align-content: center;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: auto;
+  text-align: left;
+  
+}
+
+.contact-section h1 {
+  font-size: var(--font-size-h2);
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-section p {
+  margin-bottom: var(--space-sm);
+  line-height: 1.6;
+}
+
+.contact-section a {
+  color:var(--color-secondary-accent);
+}
+
+.contact-form {
+  margin-bottom: var(--space-md);
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border: 1px solid #666;
+    box-shadow: 0 0 15px #0003;
+    background-color: transparent;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    color: var(--color-text-dark);
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    min-width: 100%;
+    resize: vertical;
+    box-sizing: content;
+}
+
+label {
+    font-size: var(--font-size-base);
+    line-height: 2;
+    color: var(--color-text-gray);
+}
+
+.form-button {
+  padding:8px 20px;
+  border-radius:8px;
+  border:1px solid var(--color-secondary-accent);
+  background:var(--color-secondary-accent);
+  font-family: var(--font-main);
+  color:var(--color-bg);
+  cursor: pointer;
+}
+
+/*.al-right {
+  display: flex;
+  justify-content: right;
+}*/
+
+input:focus,
+textarea:focus {
+  outline: 0.01px;
+  border-color: var(--color-accent);
+}
+
+
+/* ===================================
+   HOME / WORK — PROJECT GRID
+   (añadido para el landing y la página Work)
+   =================================== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas desktop */
+    gap: 24px;
+}
+
+/* 2 columnas en ventana intermedia */
+@media (max-width: 1100px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 columna en móvil */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    position: relative;
+    border-radius:2px; /* esquinas redondeadas uniformes */
+    overflow: hidden;    /* asegura el recorte del overlay */
+
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain; /* ajusta la imagen sin recortar */
+    background-color: var(--color-bg); /* relleno blanco en los bordes */
+    display: block;
+    border-radius: 12px; /* iguales a la card */
+    transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+.filter-saturation{
+  filter: opacity(1) saturate(1.5);
+}
+
+.filter-less-saturation{
+  filter: opacity(.9) saturate(1);
+}
+
+/* Overlay para desktop (se verá al hover) */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--color-overlay-dark);      /* capa oscura */
+    color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: bottom;
+    opacity: 0;                        /* oculto por defecto */
+    transition: opacity 0.25s ease;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+.project-overlay h3 {
+    font-size: var(--font-size-h4);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-xxs);
+    color: var(--color-text-dark);
+}
+
+.project-overlay p {
+    font-size: var(--font-size-small);
+    color: var(--color-text-darkgray);
+    margin-bottom: var(--space-xs);
+}
+
+/* Tags minimalistas dentro del overlay (texto pequeño, sin fondo) */
+.project-overlay .tags {
+    margin-top: var(--space-xxs);
+}
+
+.project-overlay .tags span {
+    display: inline-block;
+    color: var(--color-text-darkgray);
+    font-size: var(--font-size-h5);
+    margin: 0 8px 0 0;
+    font-weight: 400;
+}
+
+/* Efecto hover (solo desktop) */
+@media (hover: hover) and (pointer: fine) {
+    .project-card:hover img {
+        filter: grayscale(100%) brightness(1) opacity(90%);
+        transform: scale(.95);
+    }
+    .project-card:hover .project-overlay {
+        opacity: 1;
+    }
+}
+
+/* Hide text block by default (desktop) */
+.project-meta {
+  display: none;
+}
+
+/* En móvil: no overlay; los metadatos irán fuera de la imagen */
+@media (max-width: 768px) {
+    .project-card img {
+    width: 100%;
+    object-fit: contain; /* ajusta la imagen sin recortar */
+    background-color: var(--color-bg); /* relleno blanco en los bordes */
+    display: block;
+    border-radius: 12px; /* iguales a la card */
+    transition: filter 0.35s ease, transform 0.35s ease;
+}
+    .project-overlay { display: none; }
+    .project-meta {
+      display: block;
+        margin-top: var(--space-xs);
+    }
+    .project-meta h3 {
+        font-size: var(--font-size-h4);
+        font-weight: 550;
+        color: #000;
+        margin-bottom: var(--space-xs);
+    }
+    .project-meta p {
+        font-size: var(--font-size-small);
+        color: var(--color-text-darkgray);
+        margin-bottom: var(--space-xs);
+    }
+    .project-meta .tags span {
+        display: inline-block;
+        color: var(--color-text-gray);
+        font-size: var(--font-size-h5);
+        margin-right: 10px;
+        font-weight: 400;
+    }
+
+}
+
+.tag-filter {
+  margin-bottom: var(--space-md);
+}
+.tag-reset {
+  padding:4px 16px ;
+  border-radius:16px;
+  border:1px solid var(--color-bg);
+  background:var(--color-bg);
+  font-family: var(--font-main);
+  color:var(--color-text-gray);
+  cursor: pointer;
+  margin: var(--space-xxs);
+  font-size: var(--font-size-xs);
+}
+
+.tag-reset.active {
+  color: var(--color-secondary-accent);
+}
+
+.tag-button {
+  padding:4px 16px ;
+  border-radius:16px;
+  border:1px solid var(--color-light-gray);
+  background:var(--color-light-gray);
+  font-family: var(--font-main);
+  color:var(--color-bg);
+  cursor: pointer;
+  margin: var(--space-xxs);
+  font-size: var(--font-size-xs);
+}
+
+.tag-button.active {
+  background-color: var(--color-secondary-accent);
+  border-color: var(--color-secondary-accent);
+}
+
+/* ===================================
+   PROJECT PAGE STYLES
+   =================================== */
+
+/* Hero image section */
+.project-hero {
+  margin-bottom: var(--space-md);
+
+}
+
+.project-hero img {
+    
+    max-height: 40vh;
+    min-height: 400px;
+    width: 80%;
+    object-fit: contain; /* ajusta la imagen sin recortar */
+    background-color: var(--color-bg); /* relleno blanco en los bordes */
+    border-radius: 80;
+    margin-bottom: var(--space-xs);
+    justify-self: center;
+}
+
+.project-hero p {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-gray);
+  text-align: center;
+}
+
+.project-hero figcaption {    
+    font-size: var(--font-size-h5);
+    color: var(--color-text-gray);
+    text-align: center;
+}
+
+/* Project Info container */
+.project-info {
+    margin-bottom: var(--space-sm);
+}
+
+/* Title & year */
+.project-info h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin-bottom: 4px;
+}
+
+.challenge-question {
+    font-style: italic;
+    color: var(--color-text-darkgray);
+
+}
+
+.p-meta {
+    font-size: var(--font-size-base);
+    font-weight: 400;
+    color: var(--color-text-dark);
+}
+
+
+
+/* Tags (minimalista, sin fondo) */
+.tags {
+    margin: 8px 0 24px 0;
+}
+
+.tags span {
+    display: inline-block;
+    color: var(--color-text-gray);
+    font-size: var(--font-size-h5);
+    margin-right: 16px;
+    font-weight: 400;
+}
+
+/* Section headers */
+.project-info h2 {
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--color-text-dark);
+}
+
+/* Paragraph text */
+.project-info p {
+    font-size: var(--font-size-base);
+    margin-bottom: 16px;
+}
+
+/* Project Gallery */
+.project-gallery {
+    max-width: 720px;
+    margin: auto;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.project-gallery figcaption {    
+    font-size: var(--font-size-h5);
+    color: var(--color-text-gray);
+    text-align: center;
+}
+
+.project-gallery img {
+    width: 80%;
+    object-fit: contain; /* ajusta la imagen sin recortar */
+    background-color: var(--color-bg); /* relleno blanco en los bordes */
+    justify-self: center;
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    border-radius: 0;
+}
+
+.acknowledgements {
+    margin-top: var(--space-lg);
+    margin-bottom: 8px;
+    color: var(--color-text-darkgray);
+}
+
+.acknowledgements h3{
+    
+    color: var(--color-text-dark);
+    font-weight: 450;
+}
+
+.acknowledgements a {
+  color:var(--color-secondary-accent);
+}
+
+.back-wrapper {
+  margin-top: 50px; /* distance from the footer line */
+}
+
+.back-wrapper a {
+  display: inline-block;
+  color: var(--color-accent);    /* #b84be0 */
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  transition: opacity 0.2s ease;
+}
+
+
+/*====================
+TIMELINE
+======================*/
+.project-journey-horizontal {
+  max-width: var(--max-width);
+  margin: var(--space-lg) auto;
+  padding: 0 var(--space-sm);
+  text-align: center;
+}
+
+.project-journey-horizontal h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.accent-line {
+  width: 90px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border: none;
+  margin: 0 auto var(--space-md) auto;
+  border-radius: 2px;
+}
+
+/* Horizontal layout */
+.journey-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas desktop */
+    gap: var(--space-sm);
+
+}
+
+
+/* 2 columnas en ventana intermedia */
+@media (max-width: 1100px) {
+    .journey-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 columna en móvil */
+@media (max-width: 768px) {
+    .journey-container {
+        grid-template-columns: 1fr;
+        
+    }
+    .journey-item {
+        margin: auto;
+        margin-top: var(--space-xs);
+        margin-bottom: var(--space-xs);
+        max-width: 300px;
+        align-self: center;
+    }
+}
+
+
+
+
+.journey-item {
+  flex: 0 0 220px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  text-align: center;
+  box-shadow: 0 0 5px #0006;
+  /*scroll-snap-align: start;*/
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative; /* Add this */
+  z-index: 0; /* Default stacking */
+}
+
+.journey-item:hover {
+  transform: translateY(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-color: var(--color-accent); /* Optional: highlight border on hover */
+  z-index: 1; /* Bring above neighbors to avoid clipping */
+}
+
+/* ICONS */
+.journey-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: var(--space-xs);
+  border-radius: 0;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  justify-self: center;
+  filter: invert(43%) sepia(90%) saturate(700%) hue-rotate(240deg)
+          brightness(1.1) contrast(1);
+          
+}
+
+/* TITLES & TEXT */
+.journey-item h3 {
+  font-size: var(--font-size-h4);
+  color: var(--color-text-dark);
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.journey-item p {
+  font-size: var(--font-size-small);
+  line-height: 1.5;
+  color: var(--color-text-gray);
+}
+
+/* RESPONSIVE */
+/*@media (min-width: 900px) {
+  .journey-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .journey-item {
+    flex: 0 0 calc(33.33% - var(--space-sm));
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-item {
+    flex: 0 0 85%;
+    margin: 0 auto;
+  }
+}
+  */
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media (max-width: 768px) {
+    .nav-links a {
+        /*margin-left: 16px;*/
+        font-size: var(--font-size-small);
+        margin: 6px;
+    }
+
+    .project-info h1 {
+        font-size: var(--font-size-h2);
+    }
+
+    .project-info h2 {
+        font-size: var(--font-size-h3);
+    }
+
+    .project-info p {
+        font-size: var(--font-size-small);
+    }
+
+
+    .project-gallery p {    
+    font-size: var(--font-size-h5);
+    color: var(--color-text-gray);
+    text-align: center;
+}
+
+    .project-hero img {
+    max-height: 40vh;
+    min-height: 400px;
+    border-radius: 80;
+    margin-bottom: var(--space-xs);
+    justify-self: center;
+  }
+
+      .acknowledgements p {
+      font-size: var(--font-size-small);  
+      }
+
+      
+}
+
+.highlight {
+  color: var(--color-text-dark);
+}

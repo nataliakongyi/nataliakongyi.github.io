@@ -1,0 +1,134 @@
+nky-portfolio | Structure Reference v1.0 (October 2025)
+============================================================
+
+This document describes the complete folder hierarchy, 
+purpose, and maintenance guidelines for the NKY Portfolio project.
+
+------------------------------------------------------------
+STRUCTURE
+------------------------------------------------------------
+nky-portfolio/
+│
+├── en/                         ← English version (main site)
+│   ├── index.html              ← Landing page
+│   ├── work.html               ← Projects overview
+│   ├── about.html              ← Professional background
+│   ├── contact.html            ← Contact form + links
+│   │
+│   └── projects/               ← Individual project pages (EN)
+│       ├── hybrid-natures.html
+│       ├── hyperplant.html
+│       ├── seniors-club.html
+│       ├── nanomuffs.html
+│       ├── pictures-of-sound.html
+│       ├── veggielab.html
+│       └── ecotourism-masterplan.html
+│
+├── es/                         ← Spanish version (mirror)
+│   ├── index.html
+│   ├── proyectos.html
+│   ├── about.html
+│   ├── contact.html
+│   │
+│   └── projects/               ← Individual project pages (ES)
+│       ├── hybrid-natures.html
+│       ├── hyperplant.html
+│       ├── seniors-club.html
+│       ├── nanomuffs.html
+│       ├── pictures-of-sound.html
+│       ├── veggielab.html
+│       └── ecotourism-masterplan.html
+│
+├── shared/                     ← Shared resources
+│   │
+│   ├── css/                    ← Global and modular styles
+│   │   ├── style.css           ← General layout + grid system
+│   │   ├── accent.css          ← Accent color and hover states
+│   │   ├── footer.css          ← Footer-specific styles
+│   │   └── variables.css       ← Global color and font variables
+│   │
+│   ├── assets/
+│   │   │
+│   │   ├── images/
+│   │   │   │
+│   │   │   ├── ui/             ← UI icons and logos
+│   │   │   │   ├── icon.png
+│   │   │   │   ├── icon-linkedin.svg
+│   │   │   │   └── icon-opensea.svg
+│   │   │   │
+│   │   │   └── projects/       ← Project folders with 3 images each
+│   │   │       ├── hybrid-natures/
+│   │   │       ├── hyperplant/
+│   │   │       ├── seniors-club/
+│   │   │       ├── nanomuffs/
+│   │   │       ├── pictures-of-sound/
+│   │   │       ├── veggielab/
+│   │   │       └── ecotourism-masterplan/
+│   │
+│   └── docs/                   ← Documentation and maintenance files
+│       ├── README.txt
+│       ├── Checklist.txt
+│       ├── Structure.txt       ← (this file)
+│       ├── Design-Rationale.txt
+│       └── Publishing-Guide.txt
+│
+└── favicon.ico                 ← Browser icon (duplicate of icon.png)
+
+------------------------------------------------------------
+FOLDER PURPOSES
+------------------------------------------------------------
+/en/ and /es/ → All language-specific pages. Identical structure.
+/shared/css/ → Modular CSS (edit separately).
+/shared/assets/images/ui/ → Icons (favicon, social media).
+/shared/assets/images/projects/ → Project images (3 per folder).
+/shared/docs/ → Documentation, version control and publishing info.
+
+------------------------------------------------------------
+MAINTENANCE GUIDELINES
+------------------------------------------------------------
+- Always keep folder names lowercase and hyphenated.
+- Use relative paths in HTML (e.g., "../shared/css/style.css").
+- Ensure both EN/ES versions of each page link to each other.
+- Each project should have:
+  - 3 images inside its folder.
+  - Title, year, and tags in both EN and ES grids.
+
+------------------------------------------------------------
+🧩 TECHNICAL RECOMMENDATIONS
+------------------------------------------------------------
+**Images**
+- Format: .jpg or .webp
+- Size: 1600 × 1000 px (landscape)
+- Max file size: ≤ 300 KB
+- File names: lowercase, hyphen-separated (no spaces)
+- 3 images per project (main + 2 alternates)
+
+**Typography**
+- Main font: 'Poppins', sans-serif
+- Font weights: 300–600 body, 700 headings
+
+**Layout**
+- Grid: responsive 3–2–1 columns
+- Max width: 960 px
+- Padding: 2rem consistent across pages
+
+**Colors**
+- Base: white (#ffffff)
+- Text: grayscale (#111111–#666666)
+- Accent: purple (#b84be0)
+- Overlay hover: rgba(0, 0, 0, 0.5)
+
+**Footer & Navbar**
+- Footer: fixed to bottom if page content is short
+- Navbar: sticky top, neutral color, accent for active page
+
+**File Maintenance**
+- To add new project → duplicate template page.
+- To change accent color → modify /shared/css/variables.css
+- To update hover behavior → edit /shared/css/accent.css
+- To adjust footer → edit /shared/css/footer.css
+
+------------------------------------------------------------
+VERSION HISTORY
+------------------------------------------------------------
+v1.0 — October 2025 | Initial version (EN + ES bilingual release)

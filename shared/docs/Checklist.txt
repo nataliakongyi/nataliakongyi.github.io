@@ -1,0 +1,33 @@
+nky-portfolio | Maintenance Checklist v1.0 (October 2025)
+============================================================
+✅ BASIC SETUP
+- [ ] Check all internal links (EN ↔ ES).
+- [ ] Verify favicon loads in browser tab.
+- [ ] Confirm navbar and footer are consistent across all pages.
+
+✅ STYLE & COLORS
+- [ ] Accent color #b84be0 working on hover.
+- [ ] Footer text gray, centered and responsive.
+- [ ] Navbar sticky, not overlapping content.
+- [ ] All images have same border-radius.
+
+✅ PROJECT GRID
+- [ ] 3–2–1 column responsive layout.
+- [ ] Hover overlay works on desktop.
+- [ ] Text visible below image on mobile.
+- [ ] Tags correspond to design themes.
+
+✅ CONTENT
+- [ ] Bio texts match final approved version.
+- [ ] Project descriptions translated properly.
+- [ ] Work page contains all selected projects.
+
+✅ CONTACT FORM
+- [ ] Test Formspree link.
+- [ ] Test Calendly link.
+- [ ] Placeholder texts clear and centered.
+
+✅ FILES & STRUCTURE
+- [ ] All folders match `/shared/docs/structure.txt`.
+- [ ] Images stored under `/shared/assets/images/projects/[project]/`.
+- [ ] CSS files referenced with correct relative paths.

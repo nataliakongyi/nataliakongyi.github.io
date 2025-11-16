@@ -1,0 +1,32 @@
+nky-portfolio | Design Rationale v1.0 (October 2025)
+============================================================
+CONCEPT
+------------------------------------------------------------
+The NKY Portfolio blends minimalism with digital elegance,
+reflecting the intersection of architecture, design, and technology.
+The visual identity is neutral and structured, with subtle motion
+and a refined purple accent representing creativity and innovation.
+
+------------------------------------------------------------
+VISUAL SYSTEM
+------------------------------------------------------------
+- Background → pure white (#ffffff) for neutrality.
+- Accent color → elegant purple (#b84be0) for contrast and recognition.
+- Font → Poppins (Google Fonts), weights 300–700.
+- Layout → Grid system with 3–2–1 responsive columns.
+- Max width → 960 px for optimal balance and readability.
+
+------------------------------------------------------------
+BEHAVIOR
+------------------------------------------------------------
+- Hover overlay in desktop adds depth with dark transparency.
+- Mobile version prioritizes clarity: text below the image.
+- Sticky navbar for intuitive navigation.
+- Footer anchored to bottom even when content is short.
+
+------------------------------------------------------------
+TONE & STYLE
+------------------------------------------------------------
+The tone is professional, calm, and contemporary.
+Typography weights replace color contrasts to define hierarchy.
+Grayscale palette supports neutrality and timelessness.

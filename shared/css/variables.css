@@ -1,0 +1,129 @@
+/* ==========================================================
+   VARIABLES.CSS — Global style definitions for nky-portfolio
+   Version: v1.0 (October 2025)
+   ----------------------------------------------------------
+   Purpose:
+   - Centralizes all global values (colors, fonts, spacing)
+   - Enables quick updates without editing every CSS file
+   ========================================================== */
+
+:root {
+  /* -------- COLORS -------- */
+  --color-bg: #ffffff;               /* Main background (neutral white) */
+  --color-text-dark: #222;        /* Main text (black tone) */
+  --color-text-darkgray: #444;        /* Main text (black tone) */
+  --color-text-gray: #666;        /* Secondary text */
+  
+  --color-light-gray: #c5c5c5;        /* buttons */
+
+  --color-accent: #a780e8;/*b84be0;*/           /* Elegant purple accent */
+  --color-secondary-accent: #a780e8;          /*secondary color*/
+  --color-overlay-dark: rgba(200,200,200,0.80);  /* Hover overlay on project cards */
+  --color-scroll:#A780E850; 
+  --color-scroll-hover:#A780E880; 
+
+  /* -------- FONTS -------- */
+  --font-main: 'Poppins', sans-serif;
+
+  /* -------- TYPOGRAPHY SIZES -------- */
+  --font-size-base: 1rem;            /* Body text */
+  --font-size-small: 0.9rem;         /* Tags, captions */
+  --font-size-xs: .75rem;
+  --font-size-h1: 1.8rem;              /* Main headings */
+  --font-size-h2: 1.4rem;            /* Subheadings / project titles */
+
+  --font-size-h3: 1.25rem;          /* Nav / project info year*/
+
+  --font-size-h4: 1.1rem;       /*Project overlay*/
+  --font-size-h5: 0.8rem;       /*Project overlay span*/
+
+  /* -------- SPACING -------- */
+  --space-xxs: 0.2rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-smp: 1.5rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* -------- LAYOUT -------- */
+  --max-width: 960px;                /* Global layout width */
+  --border-radius: 12px;             /* Uniform corner radius for cards */
+}
+
+/* ==========================================================
+   TYPOGRAPHY & GLOBAL RESETS
+   ========================================================== */
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+h1 {
+  margin-bottom: var(--space-sm);
+}
+
+p {
+  color: var(--color-text-gray);
+  margin-bottom: var(--space-sm);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-dark);
+  transition: color 0.3s ease;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media (max-width: 768px) {
+a {
+        font-size: var(--font-size-small);
+    }
+
+h1 {
+        font-size: var(--font-size-h2);
+    }
+
+h2 {
+        font-size: var(--font-size-h3);
+    }
+p {
+        font-size: var(--font-size-small);
+    }
+
+}
+
+
+/* ==========================================================
+   GLOBAL CONTAINERS
+   ========================================================== */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  display: block;
+}
