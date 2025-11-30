@@ -417,6 +417,7 @@ textarea:focus {
   border-color: var(--color-accent);
 }
 
+/* ====== POPUP CONTACT FORM ====== */
 #form-popup {
   position: fixed;
   inset: 0;
@@ -427,6 +428,7 @@ textarea:focus {
   z-index: 999;
 }
 
+/* Esta clase es la clave para ocultar el popup */
 .popup-hidden {
   display: none;
 }
@@ -438,7 +440,7 @@ textarea:focus {
   max-width: 360px;
   text-align: center;
   border: 2px solid var(--color-accent);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   font-family: var(--font-main);
 }
 
@@ -453,6 +455,7 @@ textarea:focus {
   color: white;
   font-size: 14px;
 }
+
 
 
 /* ===================================
