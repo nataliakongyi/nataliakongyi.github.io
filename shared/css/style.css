@@ -410,10 +410,6 @@ label {
   cursor: pointer;
 }
 
-/*.al-right {
-  display: flex;
-  justify-content: right;
-}*/
 
 input:focus,
 textarea:focus {
@@ -421,10 +417,46 @@ textarea:focus {
   border-color: var(--color-accent);
 }
 
+#form-popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 999;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.popup-content {
+  background: var(--color-bg);
+  padding: 28px 36px;
+  border-radius: 14px;
+  max-width: 360px;
+  text-align: center;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  font-family: var(--font-main);
+}
+
+#popup-close {
+  margin-top: 14px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-family: var(--font-main);
+  border-radius: 8px;
+  border: none;
+  background: var(--color-accent);
+  color: white;
+  font-size: 14px;
+}
+
 
 /* ===================================
    HOME / WORK — PROJECT GRID
-   (añadido para el landing y la página Work)
    =================================== */
 .project-grid {
     display: grid;
