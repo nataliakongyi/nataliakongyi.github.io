@@ -428,7 +428,6 @@ textarea:focus {
   z-index: 999;
 }
 
-/* Esta clase es la clave para ocultar el popup */
 .popup-hidden {
   display: none;
 }
@@ -452,7 +451,7 @@ textarea:focus {
   border-radius: 8px;
   border: none;
   background: var(--color-accent);
-  color: white;
+  color: var(--color-bg);
   font-size: 14px;
 }
 
