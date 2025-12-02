@@ -8,7 +8,7 @@
 
     <meta
       name="description"
-      content="Get in touch to collaborate, exchange ideas, or explore intersections across space, technology, and digital culture."
+      content="Get in touch to collaborate, exchange ideas, or explore intersections across built environment, technology, and digital culture."
     />
     <meta name="author" content="Natalia Kong Yi" />
     <link
@@ -20,7 +20,7 @@
     <meta property="og:title" content="Contact — Natalia Kong Yi" />
     <meta
       property="og:description"
-      content="Interested in collaboration or research exchange? Let’s connect through ideas, design, and digital culture."
+      content="Get in touch to collaborate, exchange ideas, or explore intersections across built environment, technology, and digital culture."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -34,7 +34,7 @@
     <meta name="twitter:title" content="Contact – Natalia Kong Yi" />
     <meta
       name="twitter:description"
-      content="Let’s talk about possible collaborations, design projects, hybrid spatial work, creative technology, or interdisciplinary exchanges."
+      content="Let’s talk about interdisciplinary exchanges, possible collaborations, projects, and research about hybrid realities and the intersections across built environment, technology, and digital culture"
     />
     <meta
       name="twitter:image"
@@ -85,7 +85,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
 
-          <!-- Switch de idioma (activo = .current-lang) -->
+          <!-- Lang switch -->
           <span class="language-switch" aria-label="Language switch">
             <span class="current-lang">EN</span> |
             <a href="../es/contact.html">ES</a>
@@ -155,9 +155,11 @@
     <!-- pop-up-->
     <div id="form-popup" class="popup-hidden" style="display: none">
       <div class="popup-content">
-        <p>Thank you! 
-          <br>
-          I'll be in contact soon.</p>
+        <p>
+          Thank you!
+          <br />
+          I'll be in contact soon.
+        </p>
         <button id="popup-close" type="button">Close</button>
       </div>
     </div>
@@ -211,7 +213,7 @@
             );
 
             if (response.ok) {
-              // Mostrar popup: controlamos el display directamente
+              // Mostrar popup
               popup.style.display = "flex";
               popup.classList.remove("popup-hidden");
               form.reset();
