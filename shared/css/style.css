@@ -169,8 +169,8 @@ main {
 }
 
 .language-switch .current-lang {
-    font-size:var(--font-size-base); /* un poco más grande */
-    font-weight: 500;   /* ligeramente más grueso */
+    font-size:var(--font-size-base); 
+    font-weight: 500;   
     color: var(--color-text-dark); 
 }
 
@@ -193,8 +193,8 @@ main {
 }
 
 .language-switch .current-lang {
-    font-size:var(--font-size-small); /* un poco más grande */
-    font-weight: 500;   /* ligeramente más grueso */
+    font-size:var(--font-size-small); 
+    font-weight: 500;   
     color: var(--color-text-dark); 
 }
 }
@@ -243,7 +243,7 @@ main {
 .social-icons img {
     width: 24px;
     height: 24px;
-    border-radius: 6px;  /* cuadrados con esquinas redondeadas */
+    border-radius: 6px; 
     opacity: 0.8;
     transition: opacity 0.2s ease;
 }
@@ -288,7 +288,11 @@ main {
   margin-bottom: var(--space-md);
 }
 
-
+.intro h3 {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text-darkgray);
+}
 
 .intro-projects {
   margin-top: var(--space-md);
@@ -325,6 +329,10 @@ margin-bottom:05px;
 .intro {
 margin-top: 0;
 margin-bottom: 0;
+}
+
+.intro h3 {
+  font-size: var(--font-size-h4);
 }
 }
 
@@ -685,6 +693,12 @@ textarea:focus {
     color: var(--color-text-dark);
     margin-bottom: 4px;
 }
+.project-info role {
+    font-size: var(--font-size-h4);
+    font-weight: 400;
+    color: var(--color-text-dark);
+    margin-bottom: 4px;
+}
 
 .challenge-question {
     font-style: italic;
@@ -695,7 +709,7 @@ textarea:focus {
 .p-meta {
     font-size: var(--font-size-base);
     font-weight: 400;
-    color: var(--color-text-dark);
+    color: var(--color-text-darkgray);
 }
 
 
