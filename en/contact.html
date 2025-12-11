@@ -39,24 +39,58 @@
       name="twitter:image"
       content="https://nataliakongyi.github.io/shared/assets/images/ui/icon.png"
     />
+    <meta name="twitter:image:alt" content="NKY icon" />
+    <meta
+      name="twitter:url"
+      content="https://nataliakongyi.github.io/en/contact.html"
+    />
 
-    <link rel="icon" type="image/png" href="../shared/assets/images/ui/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../shared/css/variables.css" />
+    <link rel="stylesheet" href="../shared/css/style.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../shared/assets/images/ui/icon.png"
+    />
   </head>
 
   <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <a href="index.html" class="logo">NKY</a>
-        <div class="nav-links">
-          <a href="work.html">Work</a>
-          <a href="about.html">About</a>
-          <a href="contact.html" class="active">Contact</a>
-        </div>
-      </nav>
+    <!-- =======================
+         NAVBAR
+         ======================= -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img
+            src="../shared/assets/images/ui/nav-icon.png"
+            alt="NKY icon"
+            class="nav-icon"
+          />
+          <span class="nav-name">Natalia Kong Yi</span>
+        </a>
+
+        <nav class="nav-links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Lang switch -->
+          <span class="language-switch" aria-label="Language switch">
+            <span class="current-lang">EN</span> |
+            <a href="../es/contacto.html">ES</a>
+          </span>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="contact-section">
