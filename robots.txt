@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nataliakongyi.github.io/sitemap.xml
