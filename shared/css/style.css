@@ -288,8 +288,11 @@ main {
   margin-bottom: var(--space-md);
 }
 
+.intro p {
+  line-height: 2;
+}
 .intro highlight {
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-text-darkgray);
 }
 
