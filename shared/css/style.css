@@ -79,13 +79,13 @@ a {
         font-size: var(--font-size-small);
     }
 
-h1 {
+/*h1 {
         font-size: var(--font-size-h2);
-    }
+    }*/
 
-h2 {
+/*h2 {
         font-size: var(--font-size-h3);
-    }
+    }*/
 p {
         font-size: var(--font-size-small);
     }
