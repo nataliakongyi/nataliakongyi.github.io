@@ -833,19 +833,19 @@ textarea:focus {
 }
 
 
-.acknowledgements {
+.notes {
     margin-top: var(--space-md);
     margin-bottom: 8px;
     color: var(--color-text-darkgray);
 }
 
-.acknowledgements h3{
+.notes h3{
     
     color: var(--color-text-dark);
     font-weight: 450;
 }
 
-.acknowledgements a {
+.notes a {
   color:var(--color-secondary-accent);
 }
 
@@ -1045,7 +1045,7 @@ TIMELINE
     
   }
 
-      .acknowledgements p {
+      .notes p {
       font-size: var(--font-size-small);  
       }
 
