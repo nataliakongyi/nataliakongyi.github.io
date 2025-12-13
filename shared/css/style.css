@@ -390,6 +390,13 @@ margin-bottom: 0;
 }
 }
 
+@media (max-width: 360px) {
+  .intro h1 {
+    font-weight: 550;
+  }
+}
+
+
 /* -------- WORK ---------- */
 
 
