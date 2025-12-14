@@ -834,9 +834,10 @@ textarea:focus {
 
 
 .notes {
-    margin-top: var(--space-md);
+    margin-top: var(--space-xl);
     margin-bottom: 8px;
     color: var(--color-text-darkgray);
+    opacity: 0.9;
 }
 
 .notes h3{
@@ -844,6 +845,11 @@ textarea:focus {
     color: var(--color-text-dark);
     font-weight: 450;
 }
+
+.notes p {
+      font-size: var(--font-size-small);  
+      color: var(--color-text-gray);
+      }
 
 .notes a {
   color:var(--color-secondary-accent);
@@ -1045,8 +1051,13 @@ TIMELINE
     
   }
 
-      .notes p {
-      font-size: var(--font-size-small);  
+  .notes {
+    margin-top: var(--space-md);
+  }
+
+    .notes p {
+    font-size: var(--font-size-small);  
+      
       }
 
       
