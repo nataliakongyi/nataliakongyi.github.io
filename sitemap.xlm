@@ -1,66 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
 
-  <!-- Main pages -->
-  <url>
-    <loc>https://nataliakongyi.github.io/</loc>
-    <priority>1.0</priority>
-  </url>
-
+  <!-- HOME -->
   <url>
     <loc>https://nataliakongyi.github.io/en/index.html</loc>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/inicio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
+  <!-- ABOUT / BIO -->
   <url>
     <loc>https://nataliakongyi.github.io/en/about.html</loc>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/bio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
-  <url>
-    <loc>https://nataliakongyi.github.io/en/work.html</loc>
-    <priority>0.8</priority>
-  </url>
-
+  <!-- CONTACT -->
   <url>
     <loc>https://nataliakongyi.github.io/en/contact.html</loc>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
-  <!-- Project pages -->
+  <!-- PROJECT LIST -->
+  <url>
+    <loc>https://nataliakongyi.github.io/en/work.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/work.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+  </url>
+
+  <!-- PROJECTS -->
+
+  <url>
+    <loc>https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/ecotourism-cameroon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+  </url>
+
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/hybrid-natures.html</loc>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/hybrid-natures.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/hybrid-natures.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/hyperplant.html</loc>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/hyperplant.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/hyperplant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/nanomuffs.html</loc>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/nanomuffs.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/nanomuffs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/pictures-of-sound.html</loc>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/pictures-of-sound.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/pictures-of-sound.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/seniors-club.html</loc>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/seniors-club.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/seniors-club.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/veggielab.html</loc>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html</loc>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/veggielab.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/veggielab.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
   </url>
 
 </urlset>
