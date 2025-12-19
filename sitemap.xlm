@@ -6,85 +6,86 @@
 
   <!-- HOME -->
   <url>
-    <loc>https://nataliakongyi.github.io/en/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/inicio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <loc>https://nataliakongyi.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/" />
   </url>
 
   <!-- ABOUT / BIO -->
   <url>
     <loc>https://nataliakongyi.github.io/en/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/about.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/bio.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/bio.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/about.html" />
   </url>
 
   <!-- CONTACT -->
   <url>
     <loc>https://nataliakongyi.github.io/en/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/contact.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/contacto.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/contacto.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/contact.html" />
   </url>
 
   <!-- PROJECT LIST -->
   <url>
     <loc>https://nataliakongyi.github.io/en/work.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/work.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/work.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/work.html" />
   </url>
 
   <!-- PROJECTS -->
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/ecotourism-cameroon.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/ecotourism-cameroon.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/ecotourism-cameroon.html" />
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/hybrid-natures.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/hybrid-natures.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/hybrid-natures.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/hybrid-natures.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/hybrid-natures.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/hybrid-natures.html" />
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/hyperplant.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/hyperplant.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/hyperplant.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/hyperplant.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/hyperplant.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/hyperplant.html" />
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/nanomuffs.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/nanomuffs.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/nanomuffs.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/nanomuffs.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/nanomuffs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/nanomuffs.html" />
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/pictures-of-sound.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/pictures-of-sound.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/pictures-of-sound.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/pictures-of-sound.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/pictures-of-sound.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/pictures-of-sound.html" />
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/seniors-club.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/seniors-club.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/seniors-club.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/seniors-club.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/seniors-club.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/seniors-club.html" />
   </url>
 
   <url>
     <loc>https://nataliakongyi.github.io/en/projects/veggielab.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/veggielab.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/veggielab.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nataliakongyi.github.io/en/projects/veggielab.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://nataliakongyi.github.io/es/proyectos/veggielab.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliakongyi.github.io/en/projects/veggielab.html" />
   </url>
 
 </urlset>
+
