@@ -761,6 +761,11 @@ textarea:focus {
     margin-bottom: var(--space-sm);
 }
 
+.project-info .highlight {
+  font-weight: 400;
+  color: var(--color-text-darkgray);
+}
+
 .challenge-question {
     font-style: italic;
     color: var(--color-text-darkgray);
