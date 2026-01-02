@@ -345,7 +345,7 @@ p {
 }
 .intro .highlight {
   font-weight: 400;
-  color: var(--color-text-darkgray);
+  color: var(--color-text-dark);
 }
 
 .intro-projects {
@@ -763,7 +763,7 @@ textarea:focus {
 
 .project-info .highlight {
   font-weight: 400;
-  color: var(--color-text-darkgray);
+  color: var(--color-text-dark);
 }
 
 .challenge-question {
