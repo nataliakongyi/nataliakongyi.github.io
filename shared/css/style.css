@@ -86,10 +86,9 @@ a {
 /*h2 {
         font-size: var(--font-size-h3);
     }*/
-p {
-        font-size: var(--font-size-small);
-    }
-
+body {
+  font-size: var(--font-size-small);
+}
 }
 
 
@@ -407,7 +406,6 @@ margin-bottom: 0;
 }
 
 .work p {
-
   margin-bottom: var(--space-md);
 }
 /* ===================================
@@ -780,7 +778,51 @@ textarea:focus {
     
 }
 
+.synthesis {
+    margin-bottom: var(--space-md);
+}
 
+.synthesis p {
+    color: var(--color-text-dark);
+    opacity: .9;
+}
+
+.learnings {
+  margin-top: 3rem;
+}
+
+.learnings p{
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.learnings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--color-text-darkgray);
+}
+
+.learnings-list li {
+  position: relative;
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-smp);
+  color: var(--color-text-gray);
+}
+
+.learnings-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-text-dark);
+}
+
+@media (max-width: 768px) {
+  .learnings-list li {
+  padding-left: var(--space-sm);
+}
+}
 
 /* Tags (minimalista, sin fondo) */
 .tags {
@@ -800,7 +842,7 @@ textarea:focus {
 .project-info h2 {
     font-size: var(--font-size-h3);
     font-weight: 500;
-    margin-top: 24px;
+    margin-top: var(--space-mdp);
     margin-bottom: 8px;
     color: var(--color-text-dark);
 }
@@ -986,25 +1028,7 @@ TIMELINE
   color: var(--color-text-gray);
 }
 
-/* RESPONSIVE */
-/*@media (min-width: 900px) {
-  .journey-container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  .journey-item {
-    flex: 0 0 calc(33.33% - var(--space-sm));
-  }
-}
-
-@media (max-width: 600px) {
-  .journey-item {
-    flex: 0 0 85%;
-    margin: 0 auto;
-  }
-}
-  */
 
 /* ANIMATIONS */
 @keyframes fadeUp {
@@ -1055,6 +1079,10 @@ TIMELINE
     margin-bottom: var(--space-xs);
     
   }
+
+  .learnings-list li {
+  font-size: var(--font-size-small);
+}
 
   .notes {
     margin-top: var(--space-md);
