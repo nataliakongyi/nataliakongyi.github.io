@@ -1,0 +1,281 @@
+/* ==========================================================
+   PRODUCT.CSS — Product portfolio styles
+   Version: v1.0 (February 2026)
+   ----------------------------------------------------------
+   Purpose:
+   - Controls layout, navigation, grid and typography scale
+   - Uses variables defined in variables.css
+   ========================================================== */
+
+
+
+/* Scope: only affects the product landing/page */
+
+/* -------- PRODUCT LANDING PAGE---------- */
+
+.product-grid {
+  display: grid;
+  gap: 50px;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  max-width: 720px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.product {
+  margin-top: var(--space-sm);
+  text-align: left;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+
+.product p {
+  line-height: 1.75;
+}
+
+
+
+.product .one-liner{
+  font-size: var(--font-size-small);
+  color: var(--color-text-gray);
+  text-align: left;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    .product-role {
+  font-size: var(--font-size-h5);
+  line-height: var(--font-size-h3);
+  color: var(--color-text-darkgray);
+  font-weight: 500;
+    }
+
+
+/* -------------PROJECT PAGE--------------------- */
+
+.product h3 {
+  color: var(--color-text-dark);
+  font-weight: 500;
+  margin-bottom: var(--space-xxs);
+}
+
+.product .role{
+  font-size: var(--font-size-small);
+  color: var(--color-text-darkgray);
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+
+}
+
+.synthesis {
+  margin-bottom: var(--space-md);
+}
+
+.synthesis p {
+  color: var(--color-text-dark);
+  opacity: 0.9;
+}
+/*
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-sm) 0 var(--space-md) 0;
+  font-size: var(--font-size-h5);
+  color: var(--color-text-gray);
+}
+
+.meta-list li {
+  margin-bottom: var(--space-xs);
+}
+
+.meta-list strong {
+  font-weight: 500;
+  color: var(--color-text-darkgray);
+}
+  */
+
+  .meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 6px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: var(--space-xxs);
+  font-size: var(--font-size-h5);
+  line-height: var(--font-size-h3);
+  color: var(--color-text-gray);
+}
+
+.meta-list li{
+  display: inline;
+}
+
+.meta-list strong {
+  font-weight: 500;
+  color: var(--color-text-darkgray);
+}
+
+.meta-list li:not(:last-child)::after {
+  content: "·";
+  margin: 0 8px;
+  color: var(--color-text-gray);
+}
+
+.meta-list li:last-child::after {
+  content: "";
+}
+
+
+
+.product a {
+  color: var(--color-secondary-accent);
+}
+
+.single-screen-gallery {
+  max-width: 720px;
+  margin: auto;
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-screen-gallery figcaption {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-gray);
+   max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.single-screen-gallery img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  background-color: var(--color-bg);
+  margin-top: var(--space-xxs);
+  margin-bottom: var(--space-sm);
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .learnings-list li {
+    padding-left: var(--space-sm);
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .product {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .product h3 {
+    font-size: var(--font-size-h4);
+  }
+}
+
+.two-images-gallery {
+  max-width: 720px;
+  margin: var(--space-md) auto;
+}
+
+.two-images {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.two-images img {
+  flex: 1;              /* more robust than width: 50% */
+  min-width: 0;         /* prevents overflow in flex layouts */
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background-color: var(--color-bg);
+  border-radius: 0;
+  align-self: stretch;
+}
+
+.two-images-gallery figcaption {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-h5);
+  color: var(--color-text-gray);
+   max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* MOBILE: stack vertically */
+@media (max-width: 768px) {
+  .two-images {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-mdp);
+  }
+
+  .two-images img {
+    width: 100%;
+    max-width: 520px;
+  }
+}
+.flourish-container {
+      width: 100%;
+      max-width: 1000px; /* Set a max width */
+      height: 80vh; /* Make it take 80% of viewport height */
+      margin: auto;
+      padding: 1rem;
+    }
+
+    .flourish-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .flourish-container {
+        height: 60vh; /* Adjust height for smaller screens */
+      }
+    }
+
+
+.product-list {
+  color: var(--color-text-gray);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+.product-list li {
+  position: relative;
+  margin-bottom: var(--space-xxs);
+  padding-left: var(--space-smp);
+
+}
+
+.product-list li::before {
+  color: var(--color-text-gray);
+  content: "–";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
