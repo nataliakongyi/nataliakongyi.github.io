@@ -670,7 +670,7 @@ textarea:focus {
   }
 }
 
-.tag-filter {
+/*.tag-filter {
   margin-bottom: var(--space-md);
 }
 .tag-reset {
@@ -704,6 +704,43 @@ textarea:focus {
 .tag-button.active {
   background-color: var(--color-secondary-accent);
   border-color: var(--color-secondary-accent);
+}*/
+
+.tag-filter {
+  margin-bottom: var(--space-md);
+}
+.tag-reset {
+  padding: 4px 16px;
+  border-radius: 16px;
+  border: 0px solid var(--color-bg);
+  background-color: transparent;
+  font-family: var(--font-main);
+  color: var(--color-text-gray);
+  cursor: pointer;
+  margin: var(--space-xxs);
+  font-size: var(--font-size-xs);
+}
+
+.tag-reset.active {
+  color: var(--color-secondary-accent);
+}
+
+.tag-button {
+  padding: 4px 16px;
+  border-radius: 16px;
+  border: 0px solid var(--color-bg);
+  background-color: transparent;
+  font-family: var(--font-main);
+  color: var(--color-text-gray);
+  cursor: pointer;
+  margin: var(--space-xxs);
+  font-size: var(--font-size-xs);
+}
+
+.tag-button.active {
+  /*background-color: var(--color-secondary-accent);
+  border-color: var(--color-secondary-accent);*/
+  color: var(--color-secondary-accent);
 }
 
 /* ===================================
