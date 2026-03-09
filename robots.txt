@@ -3,4 +3,4 @@ Allow: /
 Disallow: /product/
 
 
-Sitemap: https://nataliakongyi.github.io/sitemap.xml
+Sitemap: https://www.nataliakongyi.com/sitemap.xml
