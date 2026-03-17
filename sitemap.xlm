@@ -9,7 +9,7 @@
     <loc>https://www.nataliakongyi.com/en/</loc>
     <lastmod>2026-03-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/inicio.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/inicio" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/" />
   </url>
 
@@ -17,87 +17,87 @@
 
   <!-- ABOUT / BIO -->
   <url>
-    <loc>https://www.nataliakongyi.com/en/about.html</loc>
+    <loc>https://www.nataliakongyi.com/en/about</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/about.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/bio.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/bio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/about" />
   </url>
 
   <!-- CONTACT -->
   <url>
-    <loc>https://www.nataliakongyi.com/en/contact.html</loc>
+    <loc>https://www.nataliakongyi.com/en/contact</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/contact.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/contacto.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/contact" />
   </url>
 
   <!-- PROJECT LIST -->
   <url>
-    <loc>https://www.nataliakongyi.com/en/work.html</loc>
+    <loc>https://www.nataliakongyi.com/en/work</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/work.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/work.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/work" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/work" />
   </url>
 
   <!-- PROJECTS -->
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/ecotourism-cameroon.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/ecotourism-cameroon</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/ecotourism-cameroon.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/ecotourism-cameroon.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/ecotourism-cameroon.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/ecotourism-cameroon" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/ecotourism-cameroon" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/ecotourism-cameroon" />
   </url>
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/hybrid-natures.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/hybrid-natures</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/hybrid-natures.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/hybrid-natures.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/hybrid-natures.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/hybrid-natures" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/hybrid-natures" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/hybrid-natures" />
   </url>
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/hyperplant.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/hyperplant</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/hyperplant.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/hyperplant.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/hyperplant.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/hyperplant" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/hyperplant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/hyperplant" />
   </url>
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/nanomuffs.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/nanomuffs</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/nanomuffs.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/nanomuffs.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/nanomuffs.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/nanomuffs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/nanomuffs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/nanomuffs" />
   </url>
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/pictures-of-sound.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/pictures-of-sound</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/pictures-of-sound.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/pictures-of-sound.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/pictures-of-sound.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/pictures-of-sound" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/pictures-of-sound" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/pictures-of-sound" />
   </url>
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/seniors-club.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/seniors-club</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/seniors-club.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/seniors-club.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/seniors-club.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/seniors-club" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/seniors-club" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/seniors-club" />
   </url>
 
   <url>
-    <loc>https://www.nataliakongyi.com/en/projects/veggielab.html</loc>
+    <loc>https://www.nataliakongyi.com/en/projects/veggielab</loc>
     <lastmod>2026-03-08</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/veggielab.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/veggielab.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/veggielab.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nataliakongyi.com/en/projects/veggielab" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.nataliakongyi.com/es/proyectos/veggielab" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nataliakongyi.com/en/projects/veggielab" />
   </url>
 
 </urlset>
