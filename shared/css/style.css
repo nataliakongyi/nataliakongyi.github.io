@@ -768,6 +768,13 @@ textarea:focus {
   text-align: center;
 }
 
+.italic-light {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text-darkgray)
+}
+
+
 .project-hero figcaption {
   font-size: var(--font-size-h5);
   color: var(--color-text-gray);

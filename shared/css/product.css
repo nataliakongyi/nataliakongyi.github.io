@@ -50,12 +50,16 @@
   margin-right: auto;
 }
 
-    .product-role {
+ .product-role {
   font-size: var(--font-size-h5);
   line-height: var(--font-size-h3);
   color: var(--color-text-darkgray);
   font-weight: 500;
     }
+    .product-role .light {
+  font-weight: 300;
+  color: var(--color-text-gray);
+}
 
 
 /* -------------PROJECT PAGE--------------------- */
