@@ -610,9 +610,16 @@ textarea:focus {
 
 .project-overlay .tags span {
   display: inline-block;
-  color: var(--color-text-darkgray);
+  color: var(--color-text-dark);
   font-size: var(--font-size-h5);
-  margin: 0 8px 0 0;
+  margin: 0 0px 0 0;
+  font-weight: 400;
+}
+.project-overlay .one-liner {
+  display: inline-block;
+  color: var(--color-text-dark);
+  font-size: var(--font-size-h5);
+  margin: 0 0px 0 0;
   font-weight: 400;
 }
 
@@ -630,6 +637,13 @@ textarea:focus {
 /* Hide text block by default (desktop) */
 .project-meta {
   display: none;
+}
+.project-meta .one-liner {
+  
+  color: var(--color-text-darkgray);
+  font-size: var(--font-size-h5);
+  
+  font-weight: 400;
 }
 
 /* En móvil: no overlay; los metadatos irán fuera de la imagen */
@@ -812,9 +826,22 @@ textarea:focus {
   color: var(--color-text-dark);
 }
 
+
+
 .challenge-question {
   font-style: italic;
   color: var(--color-text-darkgray);
+}
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.meta-list li {
+  margin-bottom: 0.25rem;
+  color: var(--color-text-gray);
+  font-size: var(--font-size-xs);
 }
 
 .p-meta {
