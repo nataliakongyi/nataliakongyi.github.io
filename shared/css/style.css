@@ -591,16 +591,16 @@ textarea:focus {
 }
 
 .project-overlay h3 {
-  font-size: var(--font-size-h4);
-  margin-top: var(--space-md);
+  font-size: var(--font-size-base);
+  margin-top: var(--space-sm);
   margin-bottom: var(--space-xxs);
   color: var(--color-text-dark);
 }
 
 .project-overlay p {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-xs);
   color: var(--color-text-darkgray);
-  margin-bottom: var(--space-xs);
+  margin-bottom: var(--space-small);
 }
 
 /* Tags minimalistas dentro del overlay (texto pequeño, sin fondo) */
