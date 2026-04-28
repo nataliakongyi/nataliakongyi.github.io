@@ -684,6 +684,11 @@ textarea:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .tag-filter {
+    display: none;
+  }
+}
 /*.tag-filter {
   margin-bottom: var(--space-md);
 }
