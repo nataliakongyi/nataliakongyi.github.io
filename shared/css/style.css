@@ -1059,6 +1059,55 @@ textarea:focus {
   border-radius: 0;
 }
 
+.two-images-gallery {
+  max-width: 720px;
+  margin: var(--space-md) auto;
+}
+
+.two-images {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+}
+
+.two-images img {
+  flex: 1;              /* more robust than width: 50% */
+  min-width: 0;         /* prevents overflow in flex layouts */
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background-color: var(--color-bg);
+  border-radius: 0;
+  align-self: stretch;
+}
+
+.two-images-gallery figcaption {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-h5);
+  color: var(--color-text-gray);
+   max-width: 50ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* MOBILE: stack vertically */
+@media (max-width: 768px) {
+  .two-images {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-mdp);
+  }
+
+  .two-images img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: var(--space-md);
+  }
+}
+
 .notes {
   margin-top: var(--space-xl);
   margin-bottom: 8px;
