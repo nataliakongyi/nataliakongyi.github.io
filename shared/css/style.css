@@ -1096,7 +1096,7 @@ textarea:focus {
   .two-images {
     flex-direction: column;
     align-items: center;
-    margin-bottom: var(--space-mdp);
+    
   }
 
   .two-images img {
